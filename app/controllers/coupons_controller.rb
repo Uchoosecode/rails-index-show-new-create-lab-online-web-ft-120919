@@ -5,12 +5,10 @@ class CouponsController < ApplicationController
     end
 
     def new
-        @coupon = Coupon.new
     end
 
     def show
-        # binding.pry
-        @coupons = Coupon.find(params[:id])
+        @coupon = Coupon.find(params[:id])
     end
 
     def create
